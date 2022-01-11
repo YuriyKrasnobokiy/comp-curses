@@ -1,5 +1,6 @@
 .advantages__list {
   display: flex;
+  justify-content: center;
 }
 
 .advantages__title {
@@ -10,10 +11,14 @@
   margin-bottom: 120px;
 }
 
-.advantages-list-item__wrapper {
-  padding-left: 29px;
-  padding-right: 29px;
-  width: 416px;
+// .advantages-list-item__wrapper {
+//   width: 416px;
+// }
+
+.advantages-list__item {
+  &:not(:last-child) {
+    margin-right: 82px;
+  }
 }
 
 .advantages-list-item__img {
@@ -24,11 +29,12 @@
 
 .advantages-list-item__title {
   font-weight: 500;
+  // width: 348px;
+
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
   display: flex;
-
   margin-top: 60px;
   margin-bottom: 30px;
 }

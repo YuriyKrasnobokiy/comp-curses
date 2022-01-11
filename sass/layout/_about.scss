@@ -4,9 +4,9 @@
 
 .about__img {
   position: relative;
-  border: 30px solid #c89afc;
-  //   border-image: linear-gradient(#c89afc, #7c6afa);
-  //   border-image-slice: -1;
+  border: 30px solid transparent;
+  border-image: linear-gradient(to right, #c89afc, #7c6afa);
+  border-image-slice: 1;
   width: 526px;
   height: 499px;
 }

@@ -301,7 +301,9 @@ img {
 
 .about__img {
   position: relative;
-  border: 30px solid #c89afc;
+  border: 30px solid transparent;
+  border-image: linear-gradient(to right, #c89afc, #7c6afa);
+  border-image-slice: 1;
   width: 526px;
   height: 499px;
 }
@@ -419,6 +421,7 @@ img {
 
 .advantages__list {
   display: flex;
+  justify-content: center;
 }
 
 .advantages__title {
@@ -429,10 +432,8 @@ img {
   margin-bottom: 120px;
 }
 
-.advantages-list-item__wrapper {
-  padding-left: 29px;
-  padding-right: 29px;
-  width: 416px;
+.advantages-list__item:not(:last-child) {
+  margin-right: 82px;
 }
 
 .advantages-list-item__img {
