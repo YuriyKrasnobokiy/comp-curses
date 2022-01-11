@@ -2,7 +2,7 @@ body {
   background-color: #121212;
   color: #ffffff;
   font-family: Roboto, sans-serif;
-  background-image: url(../images/original/bgc.jpg);
+  background-image: url(../images/bgc1.jpg);
 }
 
 .list {
@@ -419,6 +419,10 @@ img {
   width: 306px;
 }
 
+.advantages {
+  padding-top: 0;
+}
+
 .advantages__list {
   display: flex;
   justify-content: center;
@@ -458,5 +462,49 @@ img {
   line-height: 1.6;
   text-align: center;
   opacity: 0.8;
+}
+
+.partners {
+  padding-top: 0;
+}
+
+.partners__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 89px;
+}
+
+.partners__img {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+.partners__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners-list__item {
+  padding: 29px 66px;
+  flex-basis: calc(100% / 4 - 0px);
+}
+
+.partners-list__item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.partners-list__item:nth-child(4) {
+  border-right: none;
+}
+
+.partners-list__item:nth-child(n + 5) {
+  border-bottom: none;
 }
 /*# sourceMappingURL=main.css.map */
